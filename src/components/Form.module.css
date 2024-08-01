@@ -1,0 +1,98 @@
+.formContainer {
+    margin-bottom: 172px;
+  }
+  .formContainer h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: var(--unnamed-font-family-roboto);
+    font-size: var(--unnamed-font-size-24);
+  }
+  .formGroup {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #AAAAAA;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .formGroup:first-child {
+    border-top: 1px solid #AAAAAA;
+  }
+  .formGroup:last-child {
+    margin-bottom: 2rem;
+  }
+  .formLabel{
+    display: flex;
+    align-items: center;
+    flex-basis: 150px;
+    background-color: #EEEEEE;
+    align-self: stretch;
+    justify-self: stretch;
+    padding-right: 10px;
+    @media screen and (max-width: 768px) {
+      flex-basis: auto;
+    }
+  }
+  .label {
+    width: 150px;
+    padding-right: 10px;
+    margin: 15px;
+  }
+  .input, .select {
+    width: calc(100% - 160px);
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    margin: 15px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+      margin-block: 15px;
+    }
+  }
+  .select{
+    width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+      margin-block: 15px;
+    }
+  }
+  .radioGroup, .checkboxGroup {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+  .radioLabel, .checkboxLabel {
+    margin-right: 21px;
+    display: flex;
+
+  }
+  .radioGroup .radioLabel, .checkboxGroup .checkboxLabel {
+    margin-right: 21px;
+  }
+  .checkboxGroup {
+    flex-wrap: wrap;
+  }
+  .submitBtn {
+    display: block;
+    margin:  auto;
+    margin-top: 58px;
+    width: 182px;
+    padding: 12px 59px;
+    background-color: #ff0099;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .submitBtn:hover {
+    background-color: #e60082;
+  }

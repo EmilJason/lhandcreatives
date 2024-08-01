@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+/* Colors: */
+--background-color: #EEEEEE;
+--border-color: #AAAAAA;
+--text-color: #333333;
+--main-yellow: #FFF000;
+--button-red: #E3007F;
+--text-color-white: #FFFFFF;
+
+/* Font/text values */
+--unnamed-font-family-roboto: Roboto, Arial;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-24: 24px;
+--unnamed-font-size-title: clamp(60px, 8vw, 120px);
+--unnamed-font-size-sub-title: clamp(30px, 4vw, 48px);
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-24: 24px;
+}
+
+/* Character Styles */
+body {
+font-family: var(--unnamed-font-family-roboto);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--text-color);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

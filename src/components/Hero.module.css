@@ -1,0 +1,32 @@
+.hero{
+    width: 100%;
+    height: calc(100vh / 2);
+    background-image: url('../assets/img/hero-bg_pc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.hero > h1{
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-title);
+    padding-block: 3rem;
+    
+}
+.hero > p{
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-sub-title);
+    line-height: 43px;
+    text-align: center;
+    width: 13ch;
+    max-width: 100%;
+    @media (min-width: 768px) {
+        width: auto;
+    }
+}

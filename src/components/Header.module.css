@@ -1,0 +1,94 @@
+.header {
+    position: relative;
+  background: var(--main-yellow) 0% 0% no-repeat padding-box;
+  background: #fff000 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+  overflow-y: hidden;
+}
+.header > nav{
+    flex-grow: 1;
+    width: 100%;
+}
+.header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.header > nav > ul > li > a {
+  font: var(--unnamed-font-style-normal) normal bold 20px/26px
+    var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--text-color);
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header > .logo{
+    margin-right: 9.99em;
+    width: 130px;
+    height: 50px;
+}
+.header > button{
+    background: var(--button-red);
+    font: var(--unnamed-font-style-normal) normal bold 20px/26px
+    var(--unnamed-font-family-roboto);
+    text-transform: uppercase;
+    padding-inline: 40px;
+    padding-block: 9px;
+    border: none;
+    color: var(--text-color-white);
+    cursor: pointer;
+    text-align: center;
+}
+.menu{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 100;
+    color: black;
+    cursor: pointer;
+}
+.menu i{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 935px) {
+    .header{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        height: 60px;
+        justify-content: start;
+        transition: height .5s;
+    }
+    .menu_toggle{
+        height: auto;
+    }
+    .header > button{
+        align-self: center;
+    }
+    .header > nav{
+        margin-top: 5px;
+    }
+    .header > nav > ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    .header > nav > ul > li, .header > .logo {
+        /* flex-direction: row; */
+        flex-basis: 50px;
+        
+    }
+    .menu{
+        display: block;
+    }
+}

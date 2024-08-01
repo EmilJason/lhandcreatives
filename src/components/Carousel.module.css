@@ -1,0 +1,41 @@
+.carousel{
+    position: relative;
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 30px;
+    overflow-x: hidden;
+}
+.carouselWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-inline: auto;
+    perspective: 3d;
+    width: auto;
+}
+.carouselWrapper img{
+    transition: all .5s;
+}
+.carouselWrapper img:hover{
+    transform: translateY(-10px);
+}
+.carouselWrapper:hover > :not(:hover){
+    /* filter: blur(1px); */
+    transform: rotateY(30deg);
+}
+
+.prev, .next{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    top: calc(100% / 2.8);
+    cursor: pointer;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}

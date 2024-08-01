@@ -1,0 +1,11 @@
+.footerContainer{
+    height: 64px;
+    background: var(--main-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerContainer h6{
+    text-align: center;
+    font-size: var(--unnamed-font-size-16);
+}

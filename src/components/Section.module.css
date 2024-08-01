@@ -1,0 +1,43 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.section > div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: start !important;
+        align-items: start;
+    }
+}
+.section > div > div{
+    background-size: cover;
+    height: 300px;
+    justify-content: center;
+    /* flex-basis: 550px; */
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+        justify-content: start !important;
+        width: 100%;
+    
+    }
+}
+.section > div > div:nth-child(2){
+    width: 60%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.section > div:nth-child(odd){
+    flex-direction: row-reverse;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: start !important;
+    }
+}
